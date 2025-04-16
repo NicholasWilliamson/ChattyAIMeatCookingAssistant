@@ -1,0 +1,72 @@
+<!--
+ Chatty AI Meat Cooking Assistant JavaScript Code
+ Code development by Nicholas Williamson
+ Copyright 2025. All rights reserved.
+ This code is provided as Open Source Code.
+ You are free to use this code in your own projects, modify it or build on it, provided you mention my name in your credits.
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Chatty AI Meat Cooking Assistant</title>
+  <script>
+body {
+  font-family: sans-serif;
+  text-align: center;
+  margin: 40px;
+}
+select, input {
+  margin: 10px;
+  padding: 5px;
+}
+  </script>
+</head>
+<body>
+  <h1>Chatty AI Cooking Assistant</h1>
+  <select id="protein">
+    <option>Beef</option>
+	<option>Lamb</option>
+	<option>Veal</option>
+	<option>Pork</option>
+  </select>
+  <select id="cut">
+    <option>Ribeye</option>
+    <option>Sirloin</option>
+	<option>T-Bone</option>
+	<option>Porterhouse</option>
+	<option>Filet Mignon</option>
+	<option>Strip Steak</option>
+	<option>Flank Steak</option>
+	<option>Skirt Steak</option>
+	<option>Chuck Eye Steak</option>
+	<option>Hanger Steak</option>
+	<option>Flat Iron Steak</option>
+	<option>Ribs</option>
+	<option>Rump</option>
+	<option>Chops</option>
+	<option>Rack</option>
+	<option>Loin Chops</option>
+	<option>Shoulder</option>
+	<option>Tenderloin</option>
+	<option>Boston Butt</option>
+	<option>Spare Ribs</option>
+	<option>Baby Back Ribs</option>
+	<option>Belly</option>
+	<option>Country-Style Ribs</option>
+	<option>Cutlets</option>
+	<option>Breast</option>
+  </select>
+  <input type="number" id="weight" placeholder="Weight (g)">
+  <select id="doneness">
+    <option>Rare</option>
+	<option>Medium Rare</option>
+	<option>Medium</option>
+	<option>Well Done</option>
+  </select>
+  <button onclick="startCooking()">Start</button>
+  <p id="output"></p>
+  <script src="script.js"></script>
+</body>
+</html>
